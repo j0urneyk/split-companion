@@ -73,3 +73,7 @@ npm ci && npm run build
 - `static/`: `manifest.json`, `popup.html`/`popup.css`, `_locales/{en,ko}`, icon; copied into `dist/` on build
 - `scripts/build.mjs`: esbuild build; `scripts/dev.sh`: development runner
 - `tests/e2e/`: end-to-end tests and fixture pages
+
+## License
+
+MIT. See [LICENSE](LICENSE).
