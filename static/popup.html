@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <section id="grant" hidden>
+      <strong data-i18n="grantTitle"></strong>
+      <p data-i18n="grantBody"></p>
+      <button id="grant-btn" class="primary" data-i18n="grant"></button>
+    </section>
+
+    <section id="no-split" hidden>
+      <p class="title" data-i18n="notInSplit"></p>
+      <p class="hint" data-i18n="notInSplitHint"></p>
+    </section>
+
+    <section id="split" hidden>
+      <div class="panes">
+        <div class="pane" id="pane-left">
+          <span class="side" data-i18n="left"></span>
+          <span class="name"></span>
+        </div>
+        <button id="swap" class="icon" data-i18n-title="swap">⇄</button>
+        <div class="pane" id="pane-right">
+          <span class="side" data-i18n="right"></span>
+          <span class="name"></span>
+        </div>
+      </div>
+
+      <p class="warn" id="not-ready" hidden></p>
+
+      <h2 data-i18n="syncScroll"></h2>
+      <div class="segmented" id="sync" role="radiogroup">
+        <button data-value="off" data-i18n="syncOff"></button>
+        <button data-value="ratio" data-i18n="syncRatio"></button>
+        <button data-value="delta" data-i18n="syncDelta"></button>
+      </div>
+      <p class="hint" id="sync-hint"></p>
+
+      <h2 data-i18n="linkMode"></h2>
+      <div class="segmented" id="link" role="radiogroup">
+        <button data-value="off" data-i18n="linkOff"></button>
+        <button data-value="left" data-i18n="linkLtr"></button>
+        <button data-value="right" data-i18n="linkRtl"></button>
+      </div>
+      <p class="hint" data-i18n="linkHint"></p>
+
+      <button id="save" class="primary" data-i18n="savePair"></button>
+    </section>
+
+    <section id="pairs-section">
+      <h2 data-i18n="savedPairs"></h2>
+      <p class="hint" id="restore-hint" hidden data-i18n="restoreHint"></p>
+      <ul id="pairs"></ul>
+      <p class="hint" id="no-pairs" data-i18n="noPairs"></p>
+    </section>
+
+    <footer>
+      <span data-i18n="shortcuts"></span>
+      <code>Alt+Shift+S</code> <code>L</code> <code>O</code> <code>X</code>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

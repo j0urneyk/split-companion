@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="pane-background" x1="16" y1="4" x2="106" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7773ed"/>
+      <stop offset=".52" stop-color="#5b5bd6"/>
+      <stop offset="1" stop-color="#3d3d9e"/>
+    </linearGradient>
+    <linearGradient id="pane-surface" x1="64" y1="28" x2="64" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#e6e6ff"/>
+    </linearGradient>
+    <linearGradient id="pane-bridge" x1="44" y1="56" x2="84" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a0f3de"/>
+      <stop offset="1" stop-color="#5ed5bc"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#pane-background)"/>
+  <rect x="4.5" y="4.5" width="119" height="119" rx="27.5" fill="none" stroke="#fff" stroke-opacity=".18"/>
+  <g fill="#252565" opacity=".2" transform="translate(0 3)">
+    <rect x="24" y="28" width="32" height="72" rx="9"/>
+    <rect x="72" y="28" width="32" height="72" rx="9"/>
+  </g>
+  <g fill="url(#pane-surface)">
+    <rect x="24" y="28" width="32" height="72" rx="9"/>
+    <rect x="72" y="28" width="32" height="72" rx="9"/>
+  </g>
+  <rect x="40" y="57" width="48" height="16" rx="8" fill="#353590" opacity=".16"/>
+  <rect x="40" y="56" width="48" height="16" rx="8" fill="url(#pane-bridge)"/>
+</svg>

@@ -1,0 +1,130 @@
+{
+  "extName": {
+    "message": "Split Companion"
+  },
+  "extDescription": {
+    "message": "Sync scrolling, link routing and saved pairs for Firefox's native split view."
+  },
+  "cmdToggleSync": {
+    "message": "Toggle sync scrolling in the current split"
+  },
+  "cmdToggleLink": {
+    "message": "Toggle link mode: links in this pane open in the other"
+  },
+  "cmdFocusOther": {
+    "message": "Focus the other pane"
+  },
+  "cmdSwapSides": {
+    "message": "Swap left and right panes"
+  },
+  "notInSplit": {
+    "message": "This tab isn't in a split view."
+  },
+  "notInSplitHint": {
+    "message": "Hold the $KEY$ key and click another tab to split with it. Or right-click a tab → Add Split View.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "left": {
+    "message": "Left"
+  },
+  "right": {
+    "message": "Right"
+  },
+  "here": {
+    "message": "you are here"
+  },
+  "syncScroll": {
+    "message": "Sync scrolling"
+  },
+  "syncOff": {
+    "message": "Off"
+  },
+  "syncRatio": {
+    "message": "Proportional"
+  },
+  "syncRatioHint": {
+    "message": "Same relative position. Good for an original and its translation."
+  },
+  "syncDelta": {
+    "message": "Same distance"
+  },
+  "syncDeltaHint": {
+    "message": "Scrolls by the same pixels. Align once, then lock. Good for two versions of a page."
+  },
+  "linkMode": {
+    "message": "Link mode"
+  },
+  "linkOff": {
+    "message": "Off"
+  },
+  "linkLtr": {
+    "message": "Left → Right"
+  },
+  "linkRtl": {
+    "message": "Right → Left"
+  },
+  "linkHint": {
+    "message": "Plain clicks open in the other pane. Hold any modifier to click normally."
+  },
+  "swap": {
+    "message": "Swap sides"
+  },
+  "savePair": {
+    "message": "Save this pair"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "savedPairs": {
+    "message": "Saved pairs"
+  },
+  "noPairs": {
+    "message": "No saved pairs yet."
+  },
+  "restore": {
+    "message": "Open"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "restoreHint": {
+    "message": "Both tabs are open. Hold the $KEY$ key and click the right-hand tab to split them; saved settings apply automatically.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "grantTitle": {
+    "message": "Page access needed"
+  },
+  "grantBody": {
+    "message": "Sync scrolling and link mode run inside pages."
+  },
+  "grant": {
+    "message": "Allow on all sites"
+  },
+  "shortcuts": {
+    "message": "Shortcuts"
+  },
+  "notReady": {
+    "message": "Not available in: $SIDES$. Browser pages (about:, addons.mozilla.org) block extensions. Reload the page if it was open before the extension was installed.",
+    "placeholders": {
+      "sides": {
+        "content": "$1"
+      }
+    }
+  },
+  "notReadyFile": {
+    "message": "Not available in: $SIDES$. Firefox doesn't let extensions run on local files (file://). Open the page from a web server instead.",
+    "placeholders": {
+      "sides": {
+        "content": "$1"
+      }
+    }
+  }
+}

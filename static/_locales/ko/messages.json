@@ -1,0 +1,130 @@
+{
+  "extName": {
+    "message": "Split Companion"
+  },
+  "extDescription": {
+    "message": "Firefox 기본 탭 스플릿에 동기 스크롤, 링크 라우팅, 짝 저장을 더합니다."
+  },
+  "cmdToggleSync": {
+    "message": "현재 스플릿 동기 스크롤 켜기/끄기"
+  },
+  "cmdToggleLink": {
+    "message": "링크 모드 켜기/끄기: 이 창의 링크를 반대쪽에서 열기"
+  },
+  "cmdFocusOther": {
+    "message": "반대쪽 창으로 포커스 이동"
+  },
+  "cmdSwapSides": {
+    "message": "좌우 바꾸기"
+  },
+  "notInSplit": {
+    "message": "이 탭은 스플릿 상태가 아니에요."
+  },
+  "notInSplitHint": {
+    "message": "$KEY$ 키를 누른 채 다른 탭을 클릭하면 바로 스플릿돼요. 탭 우클릭 → Add Split View로도 할 수 있어요.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "left": {
+    "message": "왼쪽"
+  },
+  "right": {
+    "message": "오른쪽"
+  },
+  "here": {
+    "message": "현재 창"
+  },
+  "syncScroll": {
+    "message": "동기 스크롤"
+  },
+  "syncOff": {
+    "message": "끄기"
+  },
+  "syncRatio": {
+    "message": "비율"
+  },
+  "syncRatioHint": {
+    "message": "같은 상대 위치로 맞춰요. 원문과 번역문처럼 길이가 다른 문서에 좋아요."
+  },
+  "syncDelta": {
+    "message": "같은 거리"
+  },
+  "syncDeltaHint": {
+    "message": "같은 픽셀만큼 스크롤해요. 한 번 맞춘 뒤 고정할 때 좋아요(두 버전 비교)."
+  },
+  "linkMode": {
+    "message": "링크 모드"
+  },
+  "linkOff": {
+    "message": "끄기"
+  },
+  "linkLtr": {
+    "message": "왼쪽 → 오른쪽"
+  },
+  "linkRtl": {
+    "message": "오른쪽 → 왼쪽"
+  },
+  "linkHint": {
+    "message": "일반 클릭은 반대쪽 창에서 열려요. 보조키를 누르고 클릭하면 평소처럼 열려요."
+  },
+  "swap": {
+    "message": "좌우 바꾸기"
+  },
+  "savePair": {
+    "message": "이 짝 저장"
+  },
+  "saved": {
+    "message": "저장됨"
+  },
+  "savedPairs": {
+    "message": "저장한 짝"
+  },
+  "noPairs": {
+    "message": "저장한 짝이 없어요."
+  },
+  "restore": {
+    "message": "열기"
+  },
+  "delete": {
+    "message": "삭제"
+  },
+  "restoreHint": {
+    "message": "두 탭을 열어 뒀어요. $KEY$ 키를 누른 채 오른쪽 탭을 클릭하면 스플릿되고, 저장한 설정이 자동 적용돼요.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      }
+    }
+  },
+  "grantTitle": {
+    "message": "페이지 접근 권한이 필요해요"
+  },
+  "grantBody": {
+    "message": "동기 스크롤과 링크 모드는 페이지 안에서 동작해요."
+  },
+  "grant": {
+    "message": "모든 사이트에서 허용"
+  },
+  "shortcuts": {
+    "message": "단축키"
+  },
+  "notReady": {
+    "message": "$SIDES$ 창에서는 동작하지 않아요. 브라우저 내부 페이지(about:, 부가기능 사이트)는 확장을 막아요. 확장 설치 전에 열려 있던 페이지라면 새로고침해 주세요.",
+    "placeholders": {
+      "sides": {
+        "content": "$1"
+      }
+    }
+  },
+  "notReadyFile": {
+    "message": "$SIDES$ 창에서는 동작하지 않아요. Firefox는 확장이 로컬 파일(file://)에서 동작하는 것을 막아요. 웹 서버(http://)로 열어 주세요.",
+    "placeholders": {
+      "sides": {
+        "content": "$1"
+      }
+    }
+  }
+}

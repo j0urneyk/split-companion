@@ -1,0 +1,22 @@
+{
+  "name": "split-companion",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "npm run build && web-ext lint --source-dir dist",
+    "dev": "./scripts/dev.sh",
+    "test:e2e": "npm run build && uv run tests/e2e/test_split.py",
+    "package": "npm run build && web-ext build --source-dir dist --artifacts-dir artifacts --overwrite-dest",
+    "package:source": "mkdir -p artifacts && rm -f artifacts/split_companion-$npm_package_version-source.zip && zip -qr artifacts/split_companion-$npm_package_version-source.zip src static scripts tests package.json package-lock.json tsconfig.json README.md -x '*.DS_Store' '*__pycache__*'"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "143.0.1",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2",
+    "web-ext": "10.8.0"
+  }
+}

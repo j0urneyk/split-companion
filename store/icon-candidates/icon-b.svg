@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="link-background" x1="20" y1="4" x2="100" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#e6e3f5"/>
+    </linearGradient>
+    <linearGradient id="link-indigo" x1="42" y1="50" x2="80" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7370e5"/>
+      <stop offset="1" stop-color="#4845b7"/>
+    </linearGradient>
+    <linearGradient id="link-teal" x1="64" y1="26" x2="100" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#149d89"/>
+      <stop offset="1" stop-color="#0d7d6c"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#link-background)"/>
+  <rect x="4.5" y="4.5" width="119" height="119" rx="27.5" fill="none" stroke="#403a74" stroke-opacity=".15"/>
+  <g fill="none" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M56 68a20 20 0 0 0 30.16 2.16l12-12a20 20 0 0 0-28.28-28.28L63 36.72" stroke="url(#link-teal)"/>
+    <path d="M72 60a20 20 0 0 0-30.16-2.16l-12 12a20 20 0 0 0 28.28 28.28L65 91.28" stroke="url(#link-indigo)"/>
+  </g>
+</svg>
