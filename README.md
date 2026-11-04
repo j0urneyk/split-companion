@@ -1,6 +1,28 @@
-# Split Companion
+<p align="center">
+  <img src="static/icons/icon.svg" width="96" height="96" alt="">
+</p>
 
-A Firefox extension that adds what the native tab Split View doesn't do.
+<h1 align="center">Split Companion</h1>
+
+<p align="center">A Firefox extension that adds what the native tab Split View doesn't do.</p>
+
+## Sync scrolling
+
+Keep two pages at the same place while you scroll either one: an article next to its translation, docs next to code, or two versions of a page.
+
+![Sync scrolling: an English article and its Korean translation stay aligned, with the popup set to Proportional](store/screenshots/1-sync-scrolling.png)
+
+## Link mode
+
+Click links in one pane and they open in the other, while the first pane stays put. Keep a list on the left and read on the right.
+
+![Link mode: clicking an article in a reading list on the left opens it on the right](store/screenshots/2-link-mode.png)
+
+A teal arrow on the source pane's edge shows which way links go, and the toolbar badge shows the direction too.
+
+![The link-mode arrow on the edge of the left pane, pointing at the right pane](store/screenshots/3-link-arrow.png)
+
+## All features
 
 | Feature | What it does | Shortcut |
 |---|---|---|
