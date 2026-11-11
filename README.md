@@ -6,6 +6,8 @@
 
 Firefox's split view shows two tabs side by side, but the two panes don't know about each other. Split Companion connects them: scrolling one pane scrolls the other, and a link clicked in one pane can open in the other.
 
+<p align="center"><a href="https://addons.mozilla.org/firefox/addon/split-companion/"><b>Install from Firefox Add-ons</b></a></p>
+
 ![Sync scrolling: an English article and its Korean translation stay aligned](store/screenshots/1-sync-scrolling.png)
 
 ## Using it
