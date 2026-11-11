@@ -4,46 +4,36 @@
 
 <h1 align="center">Split Companion</h1>
 
-<p align="center">A Firefox extension that adds what the native tab Split View doesn't do.</p>
+Firefox's split view shows two tabs side by side, but the two panes don't know about each other. Split Companion connects them: scrolling one pane scrolls the other, and a link clicked in one pane can open in the other.
 
-## Sync scrolling
+![Sync scrolling: an English article and its Korean translation stay aligned](store/screenshots/1-sync-scrolling.png)
 
-Keep two pages at the same place while you scroll either one: an article next to its translation, docs next to code, or two versions of a page.
+## Using it
 
-![Sync scrolling: an English article and its Korean translation stay aligned, with the popup set to Proportional](store/screenshots/1-sync-scrolling.png)
+Make a split first: hold Option (Alt on Windows/Linux) and click a second tab, or right-click a tab and choose Add Split View. Then use the toolbar popup or the shortcuts below.
 
-## Link mode
+| Shortcut | Does |
+|---|---|
+| `Alt+Shift+S` | Sync scrolling on/off |
+| `Alt+Shift+L` | Link mode on/off; the pane you're in becomes the source |
+| `Alt+Shift+O` | Focus the other pane |
+| `Alt+Shift+X` | Swap left and right |
 
-Click links in one pane and they open in the other, while the first pane stays put. Keep a list on the left and read on the right.
+On macOS, Alt is Option. You can change the shortcuts in `about:addons`.
 
-![Link mode: clicking an article in a reading list on the left opens it on the right](store/screenshots/2-link-mode.png)
+**Sync scrolling** has two modes. *Proportional* keeps both panes at the same relative position, which suits a document and its translation. *Same distance* scrolls both by the same number of pixels: align the panes once, then compare two versions of a page. When the page itself doesn't scroll (Gmail, Notion), it syncs the largest scrollable area instead.
 
-A teal arrow on the source pane's edge shows which way links go, and the toolbar badge shows the direction too.
+**Link mode** turns one pane into a list and the other into a reader. Click a link on the left and it opens on the right; hold a modifier key to click normally. An arrow on the source pane's edge shows which way links go.
 
-![The link-mode arrow on the edge of the left pane, pointing at the right pane](store/screenshots/3-link-arrow.png)
+![Link mode: a link clicked in the reading list opens in the right pane](store/screenshots/2-link-mode.png)
 
-## All features
+**Saved pairs** store two URLs and their settings. Restoring one opens both tabs; you then Option/Alt+click the second tab to split them, and the saved settings apply.
 
-| Feature | What it does | Shortcut |
-|---|---|---|
-| Sync scrolling · proportional | Keeps both panes at the same relative position. Good for documents of different lengths, like an original and its translation. | `Alt+Shift+S` (toggle) |
-| Sync scrolling · same distance | Scrolls both panes by the same number of pixels. Align once, then lock; good for comparing two versions of a page. | Popup |
-| Link mode | Plain clicks on links in the pane you're in open in the other pane. Hold any modifier key to click normally. | `Alt+Shift+L` |
-| Focus other pane | Moves focus to the other pane. | `Alt+Shift+O` |
-| Swap sides | Swaps the left and right panes. | `Alt+Shift+X` |
-| Saved pairs | Saves both URLs and the settings. Restoring opens both tabs; one Option+click turns them into a split. | Popup |
+## What it can't do
 
-Not every app scrolls the whole document. On app-shell pages where an inner element scrolls instead (SPAs like Gmail or Notion), the extension finds the largest scrollable area and syncs that.
+Firefox lets extensions read a tab's split (`tabs.Tab.splitViewId`) and swap the panes (`tabs.move`), but not create a split. That's why you make the split yourself, and why restoring a saved pair stops at opening the tabs. Dragging a tab to split isn't possible either: Firefox doesn't support it, and the extension API can't add it (as of Firefox 159).
 
-On macOS, `Alt` is the Option (⌥) key.
-
-## Platform limits
-
-Firefox gives extensions only `tabs.Tab.splitViewId` (read) and `tabs.move` (swap sides). **Extensions cannot create a split.** So restoring a pair stops at opening both tabs; the user then **holds ⌥ Option (Alt on Windows/Linux) and clicks the right-hand tab**. That's a native Firefox gesture that joins the current tab and the clicked tab into a split. Right-click a tab → **Open in Split View** works too. Once the split forms, the saved settings apply automatically.
-
-Creating a split by dragging a tab isn't possible either: Firefox itself doesn't support it, and the extension API can't add it (as of Firefox 159).
-
-Extension content scripts never run on local files (`file://`) or browser pages (`about:`, addons.mozilla.org). The popup says so when a pane is one of these.
+Content scripts don't run on local files (`file://`) or browser pages (`about:`, addons.mozilla.org); the popup says so when a pane is one of these. Needs Firefox 159 or newer.
 
 ## Development
 
